@@ -17,4 +17,3 @@ When enabled in singleplayer or LAN, the mod restores damaged stacks in player i
 Use JDK 25 and Gradle 9.9 or newer with the Fabric Loom version in `build.gradle`, then run `gradle build`. The output JAR is under `build/libs/`. Loom's current 26.2 setup uses the official client JAR on the compile classpath; it is not included in the mod JAR.
 
 The durability hook covers mods that use Minecraft's normal `ItemStack.hurtAndBreak` method. A mod that directly edits damage components or implements a separate durability system may need an additional compatibility hook.
-

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "all_unbreakable_by_zaizor",
+  "version": "${version}",
+  "name": "All Unbreakable by Zaizor",
+  "description": "Prevents item durability loss in singleplayer and LAN. Dedicated server support is not available yet.",
+  "icon": "assets/all_unbreakable_by_zaizor/icon.png",
+  "authors": ["Zaizor"],
+  "license": "All-Rights-Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["net.zaizor.unbreakable.AllUnbreakable"],
+    "client": ["net.zaizor.unbreakable.client.UnbreakableClient"],
+    "modmenu": ["net.zaizor.unbreakable.client.ModMenuIntegration"]
+  },
+  "suggests": {
+    "modmenu": ">=20.0.3"
+  },
+  "mixins": [
+    "all_unbreakable_by_zaizor.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": "26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
